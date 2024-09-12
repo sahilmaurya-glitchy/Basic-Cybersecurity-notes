@@ -1,5 +1,4 @@
-🔐 Cybersecurity Notes
-Welcome to the Cybersecurity Notes repository! 🛡️
+Welcome to the Basic Cybersecurity Notes repository! 🛡️
 
 This repository is designed to help learners quickly grasp essential cybersecurity concepts through short and detailed notes. Whether you're a beginner or someone looking to brush up on key topics, you'll find these notes concise and easy to understand. 🚀
 
