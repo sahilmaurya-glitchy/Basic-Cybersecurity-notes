@@ -1,0 +1,48 @@
+### DNS (Domain Name System)
+
+- Purpose of DNS:
+    
+    DNS is used to translate human-readable domain names (e.g., [www.example.com](http://www.example.com/)) into IP addresses (e.g., 192.0.2.1) that computers use to identify each other on the network.
+    
+- Domain Name:
+    
+    A human-friendly address used to access websites or services. Example: `www.google.com`.
+    
+- IP Address:
+    
+    A numerical label assigned to each device connected to a computer network. Example: `192.168.1.1` (IPv4) or `2001:0db8:85a3:0000:0000:8a2e:0370:7334` (IPv6).
+    
+- DNS Hierarchy:
+    - Root Level: The top of the DNS hierarchy, denoted by a `.` (dot). It directs queries to the correct Top-Level Domain (TLD) servers.
+    - Top-Level Domain (TLD): The last part of a domain name. Examples: `.com`, `.org`, `.net`.
+    - Second-Level Domain: Directly to the left of the TLD. Example: `google` in `google.com`.
+    - Subdomain: A domain that is part of a larger domain. Example: `mail.google.com`, where `mail` is the subdomain.
+- DNS Components:
+    - DNS Resolver: The client-side application that queries the DNS server to resolve domain names to IP addresses.
+    - DNS Server: A server that contains a database of public IP addresses and their associated hostnames and provides this information to DNS resolvers.
+    - Authoritative DNS Server: The server that has the definitive information about a domain, including the IP addresses associated with it.
+- DNS Records:
+    
+    DNS servers store different types of records that provide information about domain names. Important DNS record types include:
+    
+    - A Record (Address Record): Maps a domain name to an IPv4 address.
+    - AAAA Record: Maps a domain name to an IPv6 address.
+    - CNAME Record (Canonical Name Record): Maps one domain name to another (e.g., `www.example.com` to `example.com`).
+    - MX Record (Mail Exchange Record): Specifies the mail server responsible for receiving email on behalf of a domain.
+    - PTR Record (Pointer Record): Maps an IP address to a domain name (used for reverse DNS lookup).
+    - TXT Record: Allows the domain administrator to insert text into DNS. Often used for email verification (SPF, DKIM).
+- DNS Query Process:
+    1. User Enters URL: The user types a domain name in the browser.
+    2. DNS Resolver: The resolver queries the root server.
+    3. Root Server Response: The root server responds with the IP address of the TLD server.
+    4. TLD Server: The resolver queries the TLD server, which responds with the IP address of the authoritative server.
+    5. Authoritative Server: The resolver queries the authoritative server, which provides the IP address of the domain.
+    6. Website Accessed: The browser uses the IP address to access the website.
+- Caching:
+    - DNS Cache: DNS responses are cached (stored temporarily) to speed up future requests. Example: When you revisit `www.google.com`, your computer might retrieve the IP from the cache instead of querying the DNS server again.
+    - TTL (Time to Live): The duration for which a DNS record is cached. Once expired, the resolver must query the DNS server again.
+- DNS Security:
+    - DNSSEC (Domain Name System Security Extensions): Adds security to DNS by allowing DNS responses to be verified for authenticity, preventing attacks such as DNS spoofing.
+- Example:
+    - URL: `www.example.com`
+    - IP Address: `192.0.2.1` (as returned by DNS)
