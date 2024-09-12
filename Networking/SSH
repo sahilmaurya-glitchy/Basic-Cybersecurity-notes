@@ -1,0 +1,87 @@
+1. What is SSH?
+
+- SSH stands for Secure Shell.
+- It is a cryptographic network protocol used to securely access and manage remote servers and devices over an unsecured network.
+- Commonly used for secure login, command execution, file transfer, and tunneling.
+
+2. Main Components of SSH
+
+- Client: The device or software that initiates the SSH connection (e.g., a laptop using an SSH client like OpenSSH).
+- Server: The device or software that accepts the SSH connection (e.g., a remote server with an SSH daemon running).
+- Daemon: A background process on the server that listens for SSH connection requests.
+
+3. How SSH Works
+
+- Authentication: Verifies the identity of the client to the server. It can be done using:
+    - Password Authentication: The client provides a username and password.
+    - Public Key Authentication: The client uses a pair of cryptographic keys (private and public) to authenticate without a password.
+- Encryption: Protects data transmitted between the client and server using various encryption algorithms (e.g., AES, RSA).
+- Port Forwarding: Also known as SSH tunneling, it allows secure forwarding of network traffic.
+
+4. SSH Keys
+
+- Public Key: Shared with the server and used to encrypt data.
+- Private Key: Kept secret by the client and used to decrypt data.
+- Example:
+    - Public Key: `ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq1m... user@hostname`
+    - Private Key: A file stored securely on the client, often named `id_rsa`.
+
+5. Common SSH Commands
+
+- Connecting to a Server:
+    
+    ```bash
+    bashCopy code
+    ssh username@hostname
+    
+    ```
+    
+    - Example: `ssh sahil@192.168.1.100`
+- Copying Files with SCP (Secure Copy Protocol):
+    
+    ```bash
+    bashCopy code
+    scp file.txt username@hostname:/remote/directory
+    
+    ```
+    
+    - Example: `scp report.pdf sahil@192.168.1.100:/home/sahil/Documents`
+- Port Forwarding:
+    
+    ```bash
+    bashCopy code
+    ssh -L local_port:remote_host:remote_port username@hostname
+    
+    ```
+    
+    - Example: `ssh -L 8080:localhost:80 sahil@192.168.1.100`
+
+6. Uses of SSH
+
+- Remote Server Management: Administer servers from anywhere securely.
+- File Transfers: Securely copy files between devices.
+- Secure Tunneling: Protect data in transit by encrypting traffic between systems.
+- Automated Scripts: Automate tasks on remote servers using SSH in scripts.
+
+7. SSH Configuration Files
+
+- `/etc/ssh/sshd_config`: The main configuration file for the SSH daemon on the server.
+- `~/.ssh/config`: A user-specific configuration file for SSH client settings.
+- Example Entry:
+    
+    ```bash
+    bashCopy code
+    Host myserver
+        HostName 192.168.1.100
+        User sahil
+        IdentityFile ~/.ssh/id_rsa
+    
+    ```
+    
+
+8. Security Best Practices
+
+- Disable Password Authentication: Use only public key authentication.
+- Change Default SSH Port: Avoid using the default port 22 to reduce attacks.
+- Use Strong Encryption Algorithms: Ensure your server uses up-to-date and secure algorithms.
+- Regularly Update SSH Software: Keep the SSH server and client software updated to avoid vulnerabilities.
