@@ -1,0 +1,63 @@
+### FTP (File Transfer Protocol)
+
+- Full Form: File Transfer Protocol
+- Purpose: Used to transfer files between a client and a server on a network.
+- How it Works:
+    - Operates over a TCP/IP network (e.g., the internet).
+    - Uses two channels:
+        - Command Channel: For sending commands and receiving responses.
+        - Data Channel: For transferring the actual files.
+    - Can be accessed using FTP clients (e.g., FileZilla) or via a command-line interface.
+- Security:
+    - Not secure by default: Data is sent in plain text, making it vulnerable to interception.
+    - Can use FTP over SSL/TLS (FTPS) to encrypt the connection.
+- Ports:
+    - Port 21: Used for the command channel.
+    - Port 20: Used for the data channel.
+- Example Use:
+    - Uploading website files to a web server.
+    - Command Example: `ftp://yourdomain.com`
+
+### SFTP (Secure File Transfer Protocol)
+
+- Full Form: Secure File Transfer Protocol
+- Purpose: Securely transfers files over a network, similar to FTP but with added security.
+- How it Works:
+    - Operates over SSH (Secure Shell).
+    - Encrypts both command and data channels, providing confidentiality and integrity.
+    - Requires authentication (usually a username and password, or SSH key).
+- Security:
+    - Highly secure due to encryption via SSH.
+    - Prevents man-in-the-middle attacks, eavesdropping, and data tampering.
+- Port:
+    - Port 22: The default port for SFTP (same as SSH).
+- Example Use:
+    - Securely transferring sensitive files between a client and a server.
+    - Command Example: `sftp://yourdomain.com`
+
+### TFTP (Trivial File Transfer Protocol)
+
+- Full Form: Trivial File Transfer Protocol
+- Purpose: A simple, lightweight file transfer protocol mainly used for transferring small files.
+- How it Works:
+    - Operates over UDP (User Datagram Protocol).
+    - No authentication or encryption, making it less secure.
+    - Typically used in local or controlled environments due to its simplicity and lack of security.
+- Security:
+    - Not secure: Data is transferred in plain text.
+    - No built-in authentication: Easy target for unauthorized access.
+- Port:
+    - Port 69: The default port for TFTP.
+- Example Use:
+    - Used in network booting of computers (PXE boot).
+    - Transferring configuration files to network devices like routers and switches.
+    - Command Example: `tftp://yourdomain.com`
+
+### Comparison
+
+- FTP vs. SFTP:
+    - Security: FTP is less secure; SFTP provides strong security through encryption.
+    - Ports: FTP uses ports 20 and 21, while SFTP uses port 22.
+- TFTP vs. FTP/SFTP:
+    - Complexity: TFTP is simpler and faster but lacks security features.
+    - Use Cases: TFTP is used in specific scenarios like network booting, while FTP/SFTP are more general-purpose.
