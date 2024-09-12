@@ -1,0 +1,65 @@
+### HTTP (HyperText Transfer Protocol)
+
+- Definition:
+    
+    HTTP is a protocol used for transmitting hypertext (webpages) over the internet. It is the foundation of data communication for the web.
+    
+- Full Form:
+    
+    HyperText Transfer Protocol.
+    
+- How it Works:
+    - Client-Server Model:
+        - The client (e.g., a web browser) sends an HTTP request to the server.
+        - The server processes the request and sends back an HTTP response with the requested resource (like a webpage).
+    - Stateless Protocol:
+        - Each request is independent; the server does not remember previous requests.
+- HTTP Methods:
+    - GET: Request data from a server (e.g., loading a webpage).
+    - POST: Send data to a server (e.g., submitting a form).
+    - PUT: Update data on a server.
+    - DELETE: Remove data from a server.
+- Example:
+    - URL: `http://www.example.com`
+        - HTTP is used to fetch the webpage from `www.example.com`.
+- Use Cases:
+    - Browsing websites, downloading files, submitting forms.
+- Security:
+    - Not secure: Data is transmitted in plaintext, which can be intercepted and read by attackers.
+
+---
+
+### HTTPS (HyperText Transfer Protocol Secure)
+
+- Definition:
+    
+    HTTPS is a secure version of HTTP, which includes encryption to protect data transmitted between the client and server.
+    
+- Full Form:
+    
+    HyperText Transfer Protocol Secure.
+    
+- How it Works:
+    - Encryption:
+        - Data is encrypted using SSL/TLS protocols, making it unreadable to attackers.
+        - Uses a combination of symmetric and asymmetric keys for encryption.
+    - SSL/TLS Protocol:
+        - SSL (Secure Sockets Layer): Older encryption protocol.
+        - TLS (Transport Layer Security): Modern, more secure version of SSL.
+    - Digital Certificate:
+        - Issued by a Certificate Authority (CA) to verify the server's identity.
+        - The browser checks this certificate to ensure the server is legitimate.
+- Example:
+    - URL: `https://www.example.com`
+        - HTTPS is used to fetch the webpage securely from `www.example.com`.
+- Use Cases:
+    - Online banking, e-commerce transactions, login pages, and any scenario where data security is critical.
+- Security:
+    - Secure: Data is encrypted and safe from eavesdropping or tampering.
+- Difference from HTTP:
+    - HTTPS includes encryption (SSL/TLS) and requires a digital certificate.
+    - HTTP is faster because it doesn't encrypt data, but it is less secure.
+- Importance:
+    - Protects sensitive data like passwords, credit card numbers, and personal information.
+    - Browser Indication:
+        - HTTPS is usually indicated by a padlock icon in the browser's address bar.
