@@ -1,0 +1,60 @@
+### 1. What is NTP?
+
+- NTP: Stands for Network Time Protocol.
+- Purpose: Used to synchronize the clocks of computers over a network to a precise time reference.
+- Importance: Ensures all devices on a network have the same time, which is crucial for time-sensitive applications like logging events, security, and transaction timestamps.
+
+---
+
+### 2. How NTP Works
+
+- Hierarchy of Clocks:
+    - Stratum Levels: NTP uses a hierarchical system called stratum levels.
+        - Stratum 0: High-precision time sources (e.g., atomic clocks, GPS clocks).
+        - Stratum 1: Servers directly connected to Stratum 0 devices (primary time servers).
+        - Stratum 2: Servers synchronized with Stratum 1 servers (secondary time servers).
+    - Lower Stratum Number = Higher Accuracy of the time source.
+- Synchronization Process:
+    - NTP client requests time from NTP server.
+    - Server responds with its current time.
+    - Client adjusts its clock to match the server’s time, accounting for any delays.
+
+---
+
+### 3. NTP Communication
+
+- Port: NTP uses UDP port 123 for communication.
+- Protocol: Works over the User Datagram Protocol (UDP), which is faster and lighter than TCP.
+
+---
+
+### 4. NTP Modes of Operation
+
+- Client-Server Mode: The most common mode where the client synchronizes its time with an NTP server.
+- Symmetric Mode: Used for synchronization between two NTP servers, each acting as both client and server.
+- Broadcast/Multicast Mode: A server broadcasts time to multiple clients without them needing to request it.
+- Peer Mode: NTP servers act as peers, sharing time information among themselves.
+
+---
+
+### 5. Example of NTP Use
+
+- Scenario: A company’s network with multiple servers and devices.
+    - NTP Server: Synchronizes with an external Stratum 1 server (e.g., connected to GPS).
+    - Internal Devices: All computers, routers, and switches synchronize their clocks with the company’s NTP server, ensuring accurate and consistent time across the network.
+
+---
+
+### 6. Key Terms
+
+- Jitter: Variations in time delay when data is being sent or received. NTP tries to minimize jitter.
+- Offset: The difference in time between the NTP client’s clock and the server’s clock.
+- Drift: The natural tendency of a clock to lose or gain time, which NTP corrects over time.
+
+---
+
+### 7. Uses of NTP
+
+- Security: Accurate timestamps for logs to track events and detect anomalies.
+- Data Integrity: Ensures consistency in transactions across distributed systems.
+- Compliance: Some regulations require synchronized time for accurate auditing and reporting.
