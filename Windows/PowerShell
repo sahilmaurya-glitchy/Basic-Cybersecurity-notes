@@ -1,0 +1,75 @@
+# What is PowerShell ?
+
+Microsoft designed PowerShell to automate system tasks, such as batch processing, and to create
+systems management tools for commonly implemented processes. The PowerShell language is similar to Perl.
+
+PowerShell, built on the framework, offers several ways to automate tasks:
+with cmdlets, which are very small .NET classes that appear as system commands;
+with scripts, which are combinations of cmdlets and associated logic;
+with executables, which are stand-alone tools; and
+with the instantiation of standard .NET classes.
+
+PowerShell is an object-oriented automation engine and scripting language with an
+interactive command-line shell that Microsoft developed to help IT professionals configure
+systems and automate administrative tasks.
+
+PowerShell is a task automation and configuration management framework from
+Microsoft, consisting of a command-line shell and associated scripting language
+
+The Windows PowerShell Integrated Scripting Environment (ISE) is a host application for
+Windows PowerShell. In the ISE, you can run commands and write, test, and debug scripts
+in a single Windows-based graphic user interface.
+
+The ISE provides multiline editing, tab completion, syntax coloring, selective execution,
+context-sensitive help, and support for right-to-left languages. Menu items and keyboard
+shortcuts are mapped to many of the same tasks that you would do in the Windows
+PowerShell console.
+
+# What is Module
+
+A module is a package that contains PowerShell commands, such as cmdlets, providers,
+functions, workflows, variables, and aliases.
+People who receive modules can add the commands in the modules to
+their PowerShell sessions and use them just like the built-in commands.
+
+# What are aliases
+
+A PowerShell alias is a shortcut to a command that can save you some keystrokes and
+help you remember commands. In this guide, you will learn how to create a PowerShell
+alias and what to keep in mind when working with aliases.
+Contents of this article
+
+Built-in aliases
+
+PowerShell alias cmdlets
+
+Create an alias
+
+A few aliasing issues
+Creating complex aliases
+PowerShell uses aliases generically for alternatives to many commands. Even in its early
+version, 1.0, PowerShell came with 100 aliases by default. As an example, you can give
+PowerShell a UNIX flavor and use commands like cp, mv, man, and 1s. PowerShell will
+parse and translate them to native PowerShell versions. The UNIX "man" command, for
+example, is an alias for PowerShell's command get-help. If you're not happy with the built-in
+aliases, you can add your own to replace them. Let's have a look at the built-in aliases first.
+
+# What is Pipelining?
+
+Items moving along the pipeline pass through each segment. To create a pipeline in PowerShell, you connect
+commands together with the pipe operator " ... The output of each command is used as input to the next
+command. The notation used for pipelines is similar to the notation used in other shells.
+
+# Cmdlet vs PowerShell
+
+Cmdlets are different from commands in other command-shell environments in the following manners
+
+Cmdlets are .NET Framework class objects It can't be executed separately
+
+Cmdlets can construct from as few as a dozen lines of code
+
+Parsing, output formatting, and error presentation are not handled by cmdlets
+
+Cmdlets process works on objects. So text stream and objects can't be passed as output for pipelining
+
+Cmdlets are record-based as so it processes a single object at a time
