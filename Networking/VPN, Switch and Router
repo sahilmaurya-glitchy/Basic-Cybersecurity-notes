@@ -1,0 +1,51 @@
+### 1. VPN (Virtual Private Network)
+
+- Definition:
+    - A VPN is a service that creates a secure, encrypted connection between your device and a remote server.
+    - This encrypted connection is often called a "tunnel."
+- Uses:
+    - Privacy: Masks your IP address, making your online actions virtually untraceable.
+    - Security: Protects your data from hackers, especially on public Wi-Fi networks.
+    - Access Control: Allows access to geographically restricted content (e.g., streaming services).
+- Types:
+    - Remote Access VPN: Connects individual users to a private network remotely.
+    - Site-to-Site VPN: Connects entire networks (e.g., linking different offices of a company).
+- Encryption:
+    - VPNs use encryption protocols (e.g., IPsec or OpenVPN) to secure the data traveling through the tunnel.
+- Example:
+    - Employees working from home use a VPN to securely access company resources.
+
+---
+
+### 2. Switch (Network Switch)
+
+- Definition:
+    - A Switch is a networking device that connects multiple devices (like computers, printers, etc.) within a LAN (Local Area Network) and uses MAC addresses to forward data to the correct destination.
+- Function:
+    - Switches receive data (frames) from devices and send it only to the device that needs it, improving network efficiency.
+- Types:
+    - Unmanaged Switch: Simple, plug-and-play devices without configuration options, suitable for small networks.
+    - Managed Switch: Offers more features like VLANs, port mirroring, and remote management, suitable for larger networks.
+- Layer:
+    - Operates mainly at Layer 2 (Data Link Layer) of the OSI model.
+- Example:
+    - A switch in an office network connects computers and printers, allowing them to communicate with each other.
+
+---
+
+### 3. Router
+
+- Definition:
+    - A Router is a networking device that connects different networks (e.g., a home network to the internet) and directs data packets between them based on IP addresses.
+- Function:
+    - Routers determine the best path for data to travel across networks and route the data accordingly.
+- Types:
+    - Wired Router: Connects devices through Ethernet cables.
+    - Wireless Router: Connects devices wirelessly (Wi-Fi).
+    - Core Router: High-capacity routers used by ISPs to direct internet traffic.
+- Layer:
+    - Operates at Layer 3 (Network Layer) of the OSI model.
+- NAT (Network Address Translation):
+    - Routers use NAT to translate private IP addresses within a LAN to a public IP address for internet communication.
+- Example:
+    - A home router connects devices to the internet and routes data from your laptop to the web server hosting a website you want to visit.
