@@ -1,0 +1,46 @@
+# OSI model [Open system inter-connection]
+
+- Software Layers
+    - Application Layer
+        1. Provide user-interface
+        2. Provide Different Protocols like https, SMTP, FTP, etc
+    - Presentation Layer
+        1. Data reformatting
+        2. Data encryption
+        3. Data Compress
+    - Session Layer
+        1. Establish session between to computers and maintain session till user logout
+        2. Add checkpoints in data transfer
+        3. Terminate session
+- Transport Layer
+    
+    Also known as “Heart of OSI model”. It helps in make connection between Software Layers and Hardware Layers.
+    
+    1. Divides data into segments
+    2. Provide reliable data transfer through error detection and correction
+    3. Manage flow control to prevent network congestion
+- Hardware Layers
+    - Network Layer
+        1. Convert data segments into packets
+        2. Uses IP [Internet protocol] address to send data
+        3. Selects shortest path between source and destination with help of router
+    - Data Link Layer
+        1. Divides data packets into frames
+        2. Switch, Hub, network card are worked in this layer
+        3. Mac [Media access control] address used in transfer data from one system to another
+        4. Data hopping happens here, likely refers to the movement or transfer of data between different points or systems in a network or process.
+        5. Sends acknowledgment signal after receiving frames
+        6. Re-transfer frames if it get lost
+    - Physical Layer
+        1. The Physical Layer is the first layer of the OSI model, responsible for the transmission and reception of raw bit streams over a physical medium, such as cables or wireless signals.
+        2. Decides 1 bit lifetime
+        3. Data rate
+        4. Modes of communication
+
+### TCP [Transmission control protocol]
+
+ Connection oriented : In connection oriented model first connection is established then communication starts.
+
+### UDP [User Datagram protocol]
+
+Connection Less : In connection less model connection is not established just messages are sent
