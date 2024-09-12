@@ -1,1 +1,142 @@
+## What is CMD?
 
+→ CMD refers to Command Prompt, a command line interpreter application available in most Windows operating systems. It's used to execute entered commands.
+
+There are two type of interface:
+
+1. GUI:  Graphical user interface
+2. CUI: Command user interface
+
+There are two CUI available in windows:
+
+1. CMD: For normal and administrative users 
+2. PowerShell: For power users
+
+## COMMANDS
+
+### ! Directory and Folder is same thing
+
+1. dir : List items of current directory
+2. cd : Change directory
+3. cls : Clear previous outputs
+4. mkdir or md : Make directory
+5. rmdir : Deletes a empty directory
+6. rmdir DIRECTORY NAME /s : Deletes a non empty directory
+7. cd / : Changes present working directory to first one directory
+8. ren “folder name or file name with format” “new name” : Renames file and Folder 
+9. copy “file or folder name” “location to paste” : Copy file or Folder 
+10. move “file or folder name” “location to move” : Move file or Folder 
+11. del “file name” : Delete files
+12. del ”format name” : Delete all files with given format 
+13. tasklist : Lists all running tasks
+14. taskkill /PID “Pid number” : Close running task | SOME TASK WILL NOT CLOSE BY THIS COMMAND
+15. taskkill /PID “Pid number” /F : Close task forcefully which are can't be closed normally by above command
+16. driverquery : Lists all drivers on system 
+17. net start : Lists all services 
+18. net stop “service name” : Stops the service
+19. net start “service name” : Starts the service
+20. systeminfo : Gives System information
+21. msconfig : Gives system configuration information
+22. getmac : Gives mac address
+23. chkdsk : Check disk, gives information about bad files in disk or malicious files which are harming disk
+24. vol “Drive name” : Gives volume of drive. eg, vol C:
+25. winver : Gives windows version
+26. msinfo32 : Gives system information summary
+27. diskpart : To get detailed disk information
+
+→ list disk : Lists disk that are on system
+
+→ select disk “number” : Selects disk to get information eg select disk 0
+
+→ detail disk : Gives details of selected disk
+
+1. attrib +h +r +s “file name with format” : Hides a files, NOT NORMAL HIDDEN
+2. attrib -h -r -s “file name with format” : unhides a files which is hidden by above command
+3. cipher /e “file name” or  for all : Encrypt files
+4. cipher /d “file name” or  for all : Decrypt files
+5. assoc.”file format” : Checks this file format is supported or not in system
+6.  net user : Lists user on system
+7. net user “username” : Give details about given user
+8. net user “username” /add “password[optional]” : Add new user
+9. net user “username” /del “: Delete user
+10. net user “username” /add /expires:”date format xx/xx/xxxx” : Add a user with a expire date
+11. net user “username” /active:yes : Activate the disable user
+12. net user “username” /active:no: Disable the active user
+13. net user “username”  : Reset user password without old password
+14. “Any command that gives a output” > “filename with format” : Saves the output of command in given file
+15. type “filename with format” : Output the content of file in terminal
+16. “filename” “software name that support that format” : Open the file in given supported software
+17. netsh wlan show all : Gives Wireless System Information Summary
+18. netsh wlan show interfaces : Gives information about current connected wifi
+19. netsh wlan show profiles : Gives the Wi-Fi profiles that are connected or available
+20. netsh wlan show drivers : Gives information about current driver
+21. netsh wlan show wlanreport : Gives complete detail report of wlan
+22. netsh wlan show profile name="Profile name" key=clear : Gives detail abour given profile and its password
+23. netsh wlan delete profile name="wifi name” : Delete wifi from system
+24. tracert : Checks from how many router is your request going to destination ip
+25. ping : Checks connection between system and given ip
+26. netstat : Network statics
+27. tree : Gives folder information in tree format
+28. date : Gives current date or change date
+29. time: Gives current date or change time
+30. doskey/history : Gives history of used commands
+31. shutdown -s -t “time in millisecond to shutdown” : Shutdown
+32. shutdown -r -t “time in millisecond to restart” : Restart
+
+## WHAT IS WMIC ?
+
+WMIC IS THE ABBREVIATION OF WINDOWS MANAGEMENT INTERFACE COMMAND, IS A SIMPLE
+COMMAND PROMPT TOOL THAT RETURNS INFORMATION ABOUT THE SYSTEM YOU ARE RUNNING IT ON.
+
+### COMMANDS [Use this commands inside wmic]
+
+1. wmic : To enter in the tool
+2. cpu : Gives cpu details
+3. product get name, version : Gives products name and version which are on the system
+4. csproduct get version : Gives installed cs product version
+5. computersystem get name, systemtype : Gives system name and system type
+6. computersystem get totalphysicalmemory : Gives total ram storage in bytes
+7. csproduct get identifyingnumber : Gives os identifying number
+8. partition get name, type, size : Gives disk storage information
+9. computersystem get manufacturer : Gives system manufacturer name
+10. computersystem get model : Gives exact model of system
+11. nic get macaddress, description : Gives mac address of system
+12. process where name="task name" call terminate : Close the running task
+
+# What's a batch file?
+
+The definition of a batch file as it used in a Windows/DOS environment is a text file that
+contains a series of commands that executed in sequence for Windows for perform and
+operation.
+
+## Why is it called a batch file?
+
+It's called a batch file because it "batches" a sequence of commands that would normally
+have to be ran one at times.
+
+## How do you execute a batch file?
+
+You can run a batch file two ways. Create a shortcut the batch file or create your own
+batch file and save it to your desktop or somewhere in the files structure you have
+access. Then you can either double click the icon for the batch file, or you can execute
+from the command line simply by typing the filename and extension, e.g. batchfile.bat,
+and pressing enter.
+
+## Batch File: Commands
+
+The purpose of batch files is run many DOS commands at once sometimes
+pausing to allow the administrator to interact with the operation by entering
+data or starting the process if the process is paused. The commands that are
+used to "program" the batch file are similar to DOS commands. Here is a list of
+the important commands that are used and their definitions:
+
+. ECHO - Displays text on the screen.
+. ECHO OFF - Hides the text that is normally output.
+. START - Run a file with its default application.
+. REM - Inserts a comment line in the program.
+. MKDIR/RMDIR - Create and remove directories.
+· DEL - Deletes a file or files.
+. COPY - Copy a file or files.
+. COPY - Allows you to copy files with extra options.
+· FOR/IN/DO - This command lets you specify files.
+. TITLE - Edit the title of the window.
