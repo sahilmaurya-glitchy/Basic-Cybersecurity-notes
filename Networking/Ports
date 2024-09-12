@@ -1,0 +1,63 @@
+# Ports
+
+Computer Ports: Physical or virtual docking points through which data is sent or received between computers and other devices.
+
+### Types of Ports:
+
+- Physical Ports: Hardware interfaces on devices (e.g., USB, HDMI).
+- Virtual Ports: Software-based endpoints in network communication (e.g., HTTP, FTP).
+
+### Physical Ports:
+
+- USB (Universal Serial Bus):
+    - Used to connect peripherals like keyboards, mice, printers, etc.
+    - Examples: USB 2.0, USB 3.0, USB-C.
+- HDMI (High-Definition Multimedia Interface):
+    - Transmits audio and video from computers to monitors, TVs.
+    - Example: HDMI 1.4, HDMI 2.0.
+- Ethernet Port (RJ-45):
+    - Used for wired network connections.
+    - Common speeds: 10/100/1000 Mbps (Megabits per second).
+- Audio Ports (3.5mm Jack):
+    - Used for headphones, microphones, and speakers.
+    - Types: Line-in, Line-out, Mic-in.
+- VGA (Video Graphics Array):
+    - Analog connection for monitors.
+    - Replaced by HDMI and DisplayPort.
+- DisplayPort:
+    - Digital display interface, supports higher resolutions than HDMI.
+
+### Virtual Ports:
+
+- Port Numbers:
+    - Used in networking to distinguish between different services on a computer.
+    - Example: HTTP (Port 80), HTTPS (Port 443), FTP (Port 21), SSH (Port 22).
+- TCP (Transmission Control Protocol) Ports:
+    - Reliable, connection-oriented protocol.
+    - Used for web browsing, email (e.g., SMTP, IMAP).
+- UDP (User Datagram Protocol) Ports:
+    - Connectionless, faster but less reliable.
+    - Used for streaming, online gaming (e.g., DNS, VoIP).
+
+### Common Port Numbers:
+
+- Port 21: FTP (File Transfer Protocol) – Transfers files between client and server.
+- Port 22: SSH (Secure Shell) – Securely access remote devices.
+- Port 25: SMTP (Simple Mail Transfer Protocol) – Sends emails.
+- Port 53: DNS (Domain Name System) – Resolves domain names to IP addresses.
+- Port 80: HTTP (Hypertext Transfer Protocol) – Unsecured web browsing.
+- Port 443: HTTPS (Hypertext Transfer Protocol Secure) – Secured web browsing.
+- Port 110: POP3 (Post Office Protocol v3) – Retrieves emails from server.
+- Port 143: IMAP (Internet Message Access Protocol) – Manages emails directly on the server.
+- Port 3389: RDP (Remote Desktop Protocol) – Remotely controls another computer.
+
+### Uses of Ports:
+
+- Data Transmission: Ports enable the transfer of data between devices and over the internet.
+- Security: Ports can be opened or closed by firewalls to protect systems from unauthorized access.
+- Networking: Facilitate communication between different networked devices.
+
+### Security Considerations:
+
+- Open Ports: Vulnerable to attacks if not properly managed.
+- Firewalls: Used to block unnecessary ports and secure the network.
