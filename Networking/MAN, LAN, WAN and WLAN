@@ -1,0 +1,52 @@
+### 1. LAN (Local Area Network)
+
+- Definition: A LAN connects computers and devices within a small geographic area, such as a single building, school, or office.
+- Range: Typically up to a few kilometers (usually within a building or campus).
+- Components: Routers, switches, computers, printers.
+- Advantages: High data transfer rates, low latency, cost-effective for small areas.
+- Example: The network inside a small office, where all computers and printers are connected.
+- Uses:
+    - File sharing
+    - Printer sharing
+    - Centralized data storage
+
+---
+
+### 2. MAN (Metropolitan Area Network)
+
+- Definition: A MAN covers a larger geographic area than a LAN, typically a city or large campus.
+- Range: Typically spans several kilometers, covering a city or town.
+- Components: Routers, switches, optical fiber, modems.
+- Advantages: Connects multiple LANs within a city, offers higher data transfer rates than WAN.
+- Example: The network connecting all branches of a company within a city.
+- Uses:
+    - Interconnecting multiple buildings or campuses within a city
+    - Citywide internet access for residents and businesses
+
+---
+
+### 3. WAN (Wide Area Network)
+
+- Definition: A WAN covers a broad geographic area, often connecting multiple cities, countries, or even continents.
+- Range: Can span thousands of kilometers, from country-wide to worldwide.
+- Components: Routers, leased lines, satellites, public internet.
+- Advantages: Enables long-distance communication, supports a large number of users.
+- Example: The internet itself, or a multinational company's network connecting offices worldwide.
+- Uses:
+    - Global business communication
+    - Internet access
+    - Connecting branch offices across regions
+
+---
+
+### 4. WLAN (Wireless Local Area Network)
+
+- Definition: A WLAN is a type of LAN that uses wireless communication (Wi-Fi) to connect devices within a local area.
+- Range: Similar to LAN, typically within a building or limited outdoor space (up to a few hundred meters).
+- Components: Wireless routers, access points, wireless network adapters.
+- Advantages: Provides mobility and flexibility, no need for physical cables.
+- Example: The Wi-Fi network in a home, coffee shop, or university campus.
+- Uses:
+    - Wireless internet access
+    - Connecting laptops, smartphones, and tablets
+    - Enabling smart home devices
