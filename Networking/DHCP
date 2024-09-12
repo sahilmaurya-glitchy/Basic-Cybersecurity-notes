@@ -1,0 +1,53 @@
+1. Definition and Purpose
+
+- DHCP (Dynamic Host Configuration Protocol) is a network management protocol used to automatically assign IP addresses and other network configuration parameters to devices on a network.
+- Purpose: Simplifies network administration by automatically assigning IP addresses, reducing manual configuration.
+
+2. Key Components
+
+- DHCP Server: The server that holds a pool of IP addresses and network configuration information.
+- DHCP Client: The device that requests network configuration from the DHCP server.
+- IP Address Lease: The temporary assignment of an IP address to a DHCP client.
+
+3. How DHCP Works
+
+1. Discover: The DHCP client sends a DHCPDISCOVER message to locate a DHCP server.
+2. Offer: The DHCP server responds with a DHCPOFFER message, offering an IP address to the client.
+3. Request: The client responds with a DHCPREQUEST message to request the offered IP address.
+4. Acknowledge: The DHCP server sends a DHCPACK message to confirm the lease and provide other network settings like the default gateway and DNS servers.
+
+4. DHCP Lease Time
+
+- Lease Time: The duration for which an IP address is assigned to a client.
+- After the lease time expires, the IP address can be reassigned to another device.
+
+5. DHCP Address Allocation Methods
+
+- Dynamic Allocation: IP addresses are assigned on demand from a pool and released back when no longer needed.
+- Automatic Allocation: A permanent IP address is assigned to a device from a pool.
+- Static Allocation (Static Mapping): A specific IP address is permanently assigned to a device based on its MAC address.
+
+6. Advantages of DHCP
+
+- Automated IP Address Management: Reduces manual configuration errors.
+- Scalability: Suitable for large networks with numerous devices.
+- Centralized Management: Simplifies network configuration and management from a central location.
+
+7. Examples of DHCP Usage
+
+- Home Networks: Automatically assigns IP addresses to devices like smartphones, laptops, and smart TVs.
+- Corporate Networks: Ensures devices across a large organization receive correct network settings automatically.
+
+8. Security Considerations
+
+- Unauthorized DHCP Servers: Also known as Rogue DHCP Servers, can cause network issues by assigning incorrect IP addresses.
+- DHCP Snooping: A security feature used to filter out rogue DHCP traffic and prevent unauthorized IP assignments.
+
+9. DHCP vs. Static IP
+
+- DHCP: Automatic, easier management, dynamic IP assignment.
+- Static IP: Manually assigned, permanent IP, often used for servers or network devices requiring a consistent IP address.
+
+10. DHCP in IPv6 (DHCPv6)
+
+- DHCPv6: The version of DHCP used in IPv6 networks, handles both stateful and stateless configurations.
