@@ -1,0 +1,37 @@
+### CIDR (Classless Inter-Domain Routing)
+
+- Full form: Classless Inter-Domain Routing
+- Purpose: Efficiently allocate IP addresses and manage IP routing.
+- Format: Uses IP address followed by a slash and a number (e.g., `192.168.1.0/24`).
+    - The number after the slash represents the number of bits used for the network portion of the address.
+    - Example: `192.168.1.0/24` means the first 24 bits are for the network, leaving 8 bits for host addresses.
+- Key Points:
+    - Reduces IP wastage by allowing variable-length subnet masking.
+    - /8 to /30 defines how many addresses are for the network vs. hosts.
+    - /24 (255.255.255.0) is often used for small networks (254 hosts).
+
+---
+
+### Subnet Mask
+
+- Purpose: Used to divide an IP address into network and host portions.
+- Format: Four sets of numbers (octets) in dotted decimal format (e.g., `255.255.255.0`).
+- Example:
+    - IP: `192.168.1.10`
+    - Subnet Mask: `255.255.255.0` (This is a /24 network, meaning the first 24 bits define the network, and the remaining 8 bits are for hosts).
+- Key Points:
+    - A subnet mask helps define the network boundary.
+    - 255.0.0.0 is for Class A, 255.255.0.0 for Class B, and 255.255.255.0 for Class C networks.
+    - Hosts on the same network can communicate directly, while different networks require routing.
+
+---
+
+### Default Gateway
+
+- Purpose: Acts as an access point or route for devices to send data to destinations outside their local network.
+- Example:
+    - If a device with IP `192.168.1.10` wants to communicate with a server on the internet, it sends the data to the default gateway (e.g., `192.168.1.1`), which then forwards the traffic outside the local network.
+- Key Points:
+    - The default gateway is typically the router on a network.
+    - Without a default gateway, devices cannot reach external networks (like the internet).
+    - Each device on a network typically has one default gateway, identified by its IP address.
