@@ -1,0 +1,49 @@
+# VLAN (Virtual Local Area Network)
+
+- Definition:
+    
+    A VLAN (Virtual Local Area Network) allows you to create multiple, isolated logical networks on a single physical network infrastructure.
+    
+- Purpose:
+    
+    It is used to segment a large network into smaller, manageable parts, improving performance, security, and traffic management.
+    
+- Key Features:
+    - Logical Separation: Devices on different VLANs cannot communicate directly without a router.
+    - Reduced Broadcast Traffic: Reduces unnecessary broadcast traffic across the entire network.
+    - Improved Security: Helps isolate sensitive data by grouping devices into separate VLANs.
+    - Scalability: Easily add or modify devices in the network without affecting the entire physical network.
+- Common Uses:
+    - Department Segmentation: E.g., separating HR, Finance, and IT departments within a company.
+    - Guest Networks: Creating isolated guest VLANs for visitors in an organization.
+    - VoIP Traffic Management: Isolating voice traffic from data traffic for better quality.
+- Types of VLANs:
+    - Data VLAN: Used for user-generated traffic (like browsing, emails, etc.).
+    - Voice VLAN: Optimized for carrying VoIP (Voice over IP) traffic.
+    - Management VLAN: Used to manage network devices (e.g., switches, routers).
+    - Native VLAN: The default VLAN for untagged traffic on a switch port.
+- Example:
+    - Scenario: An office has two departments: Sales and IT. By placing Sales devices in VLAN 10 and IT devices in VLAN 20, communication between the two is restricted unless routed, improving security and traffic management.
+
+---
+
+# DMZ (Demilitarized Zone)
+
+- Definition:
+    
+    A DMZ (Demilitarized Zone) is a separate network used to isolate publicly accessible services (e.g., websites, email servers) from the internal, private network.
+    
+- Purpose:
+    
+    It adds a layer of security by separating external-facing services from the internal network, reducing the risk of external attacks.
+    
+- Key Features:
+    - Public Access: Services in the DMZ (e.g., web servers) are accessible from the internet, but isolated from the internal network.
+    - Increased Security: If an attacker compromises a server in the DMZ, they are less likely to reach the internal network.
+    - Traffic Control: DMZ servers can interact with both the internet and the internal network, but strict firewall rules regulate this traffic.
+- Common Uses:
+    - Web Servers: Hosting a company website in the DMZ so external users can access it without exposing internal systems.
+    - Email Servers: Placing email servers in the DMZ to handle internet-facing email communication securely.
+    - FTP Servers: Hosting an FTP server in the DMZ to allow file transfers without exposing internal systems.
+- Example:
+    - Scenario: A company hosts its public website on a web server in the DMZ. External users can access the website, but even if the server is compromised, the internal company network remains protected.
