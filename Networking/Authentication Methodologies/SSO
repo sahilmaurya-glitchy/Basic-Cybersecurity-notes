@@ -1,0 +1,73 @@
+ SSO (Single Sign-On) – Key Points for Revision
+
+---
+
+ 1. Definition of SSO:
+
+- SSO (Single Sign-On): A user authentication process that allows users to log in once and gain access to multiple applications or systems without needing to log in again for each.
+
+---
+
+ 2. How SSO Works:
+
+- Central Authentication Server: The SSO system has a central server that handles user authentication.
+- Session Token: After the user logs in, the SSO server creates a session token that is used to verify the user across different systems.
+- Trust Relationships: Applications connected to the SSO system trust the session token, so no additional login is needed.
+
+---
+
+ 3. Key Components of SSO:
+
+- Identity Provider (IdP): Verifies user identity (e.g., Google, Microsoft).
+- Service Providers (SP): The applications or services that the user wants to access (e.g., Gmail, Slack).
+- Authentication Protocols: Protocols used by SSO to pass authentication info (e.g., SAML (Security Assertion Markup Language), OAuth (Open Authorization), OpenID Connect).
+
+---
+
+ 4. Benefits of SSO:
+
+- Convenience: Users only need to remember one set of credentials.
+- Improved Security: Reduced password fatigue, leading to fewer weak passwords.
+- Time-Saving: Faster access to multiple services without logging in repeatedly.
+
+---
+
+ 5. Common SSO Use Cases:
+
+- Enterprise SSO: Employees access email, cloud services, and internal apps with one login.
+- Consumer SSO: Users log in to multiple apps using social media accounts (e.g., logging into Spotify with a Google account).
+
+---
+
+ 6. Examples of SSO:
+
+- Google SSO: Logging into YouTube, Google Drive, and Gmail with one Google account.
+- Facebook SSO: Logging into third-party apps (e.g., Instagram, Spotify) using your Facebook credentials.
+
+---
+
+ 7. Security Concerns in SSO:
+
+- Single Point of Failure: If the SSO account is compromised, all linked services are at risk.
+- Mitigation: Use Multi-Factor Authentication (MFA) to strengthen security.
+
+---
+
+ 8. Popular SSO Solutions:
+
+- Okta: Cloud-based SSO solution.
+- Microsoft Azure AD: Used in enterprises to provide SSO to Microsoft services and other apps.
+
+---
+
+ 9. Protocols Used in SSO:
+
+- SAML (Security Assertion Markup Language): Used for exchanging authentication data between IdP and SP.
+- OAuth: Authorization protocol allowing access to resources without sharing credentials.
+- OpenID Connect: Identity layer built on top of OAuth 2.0 for verifying user identity.
+
+---
+
+ 10. SSO in Action:
+
+- Example: If you log in to Google, you can use Gmail, YouTube, and Google Drive without needing to log in separately.
