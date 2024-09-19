@@ -103,3 +103,16 @@ Definition:
 ---
 
  Example of a Certificate:
+
+Certificate:
+   Data:
+       Version: 3 (0x2)
+       Serial Number: 4096 (0x1000)
+   Issuer: C=US, O=Let's Encrypt, CN=Let's Encrypt Authority X3
+   Validity:
+       Not Before: Jul 10 00:00:00 2023 GMT
+       Not After : Oct 08 23:59:59 2023 GMT
+   Subject: CN=example.com
+   Subject Public Key Info:
+       Public Key Algorithm: rsaEncryption
+       RSA Public-Key: (2048 bit)
