@@ -1,0 +1,107 @@
+LDAP (Lightweight Directory Access Protocol)
+
+---
+
+- Definition:
+    
+    LDAP stands for Lightweight Directory Access Protocol, which is used for accessing and managing directory services over a network. It helps in retrieving and modifying information from a directory service like user details, devices, and other resources.
+    
+- Purpose:
+    
+    LDAP is widely used for authentication and authorization in organizations to manage access to applications and systems.
+    
+
+---
+
+ Key Components of LDAP
+
+1. Directory:
+    - A database optimized for read-heavy operations.
+    - Stores hierarchical information like users, groups, devices, and other network objects.
+    - Example: An employee directory containing names, email addresses, and job titles.
+2. Entry:
+    - A basic unit in an LDAP directory.
+    - Every entry has a Distinguished Name (DN), which is unique.
+    - Example: `uid=jdoe,ou=People,dc=example,dc=com`
+3. Attributes:
+    - Properties of each entry.
+    - Example: For a user, attributes could be name, email, phone number.
+    - Format: `attributeName: attributeValue`
+    - Example: `mail: john.doe@example.com`
+4. Distinguished Name (DN):
+    - A unique identifier for an entry in the directory.
+    - Composed of a sequence of attributes that specify the exact location of the entry.
+    - Example: `cn=John Doe,ou=Employees,dc=example,dc=com`
+5. Object Classes:
+    - Define the types of entries (e.g., user, group).
+    - Each entry must belong to an object class that defines the mandatory and optional attributes.
+
+---
+
+ LDAP Operations
+
+1. Bind:
+    - Used to authenticate a client to the LDAP server.
+    - Example: A user logs in with a username and password.
+2. Search:
+    - Retrieves entries based on filters.
+    - Example: Searching for all users with the last name "Doe."
+3. Compare:
+    - Compares an entry’s attribute to a given value.
+    - Example: Checking if the email of a user is `john.doe@example.com`.
+4. Add:
+    - Adds a new entry to the directory.
+    - Example: Creating a new user account in the directory.
+5. Delete:
+    - Removes an entry from the directory.
+6. Modify:
+    - Updates the attributes of an existing entry.
+    - Example: Updating the email address of a user.
+
+---
+
+ LDAP Structure (DIT)
+
+- DIT (Directory Information Tree):The hierarchical structure of an LDAP directory.
+    - Root (top level): Domain (e.g., `dc=com`)
+    - Branches: Organizational Units (OU) (e.g., `ou=People`)
+    - Leaves: Specific entries like users or devices.
+
+---
+
+ LDAP Authentication
+
+- LDAP is commonly used for authenticating users in applications, especially for Single Sign-On (SSO) systems.
+- LDAP servers can store credentials and verify user identities.
+
+---
+
+ LDAP in Use
+
+- Example: In a company, LDAP can manage user login details, granting access to internal applications like email and file-sharing platforms.
+- LDAP with Active Directory:Microsoft’s Active Directory is a popular directory service that uses LDAP for querying and managing network resources like computers, users, and groups.
+
+---
+
+ LDAP Ports
+
+- Port 389: Default port for unencrypted LDAP communication.
+- Port 636: Used for LDAP over SSL (LDAPS), which is a secure version of LDAP.
+
+---
+
+ Advantages of LDAP
+
+1. Scalability:
+    - Suitable for both small and large directories.
+2. Cross-platform compatibility:
+    - LDAP works on multiple platforms, including Windows, Linux, and macOS.
+3. Centralized management:
+    - Central point for managing user credentials and permissions.
+
+---
+
+ Example Use Case
+
+- Scenario: A university using LDAP to manage student accounts.
+    - Students can use the same username and password to access different services like email, library resources, and the learning management system.
