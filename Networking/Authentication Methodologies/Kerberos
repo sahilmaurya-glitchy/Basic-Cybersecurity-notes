@@ -1,0 +1,45 @@
+Kerberos: Secure Authentication Protocol
+
+- What is Kerberos?
+    - A network authentication protocol used to verify the identity of users and systems in a secure way.
+    - Designed to prevent eavesdropping and replay attacks by using secret-key cryptography.
+    - Developed at MIT for securing network services.
+- Key Terms:
+    - KDC (Key Distribution Center): A central server responsible for managing and distributing secret keys. It has two main parts:
+        - AS (Authentication Server): Verifies user identity and issues a Ticket Granting Ticket (TGT).
+        - TGS (Ticket Granting Server): Issues service tickets based on the TGT for accessing network services.
+    - TGT (Ticket Granting Ticket): A temporary pass given after initial authentication, allowing users to request service tickets.
+    - Ticket: A time-stamped, encrypted data structure used for accessing services securely.
+- How Kerberos Works:
+    1. User Login:User enters a username and password, which is encrypted and sent to the AS.
+    2. AS Authentication:AS verifies credentials and sends back a TGT and a session key (encrypted with the user's password).
+    3. Requesting Service:When the user needs to access a network service, they send the TGT to the TGS.
+    4. Service Ticket Issuance:TGS sends back a service ticket encrypted with the service’s secret key, allowing access to that service.
+    5. Accessing Service:User presents the service ticket to the desired service, which decrypts the ticket and verifies identity.
+- Encryption Used in Kerberos:
+    - Symmetric Key Encryption: Both the client and the server use the same key for encryption and decryption.
+    - Example: DES, AES
+- Kerberos Process Example:
+    - Step 1: Alice logs in and requests a TGT from the AS.
+    - Step 2: The AS authenticates Alice and sends back a TGT and session key.
+    - Step 3: Alice uses the TGT to request a service ticket from the TGS.
+    - Step 4: The TGS sends Alice a service ticket to access a mail server.
+    - Step 5: Alice uses the service ticket to access the mail server.
+- Why Use Kerberos?
+    - Mutual Authentication: Both user and server verify each other.
+    - Prevents Eavesdropping: Sensitive information like passwords are never sent as plain text.
+    - Time-Stamps: Tickets are time-bound, reducing the risk of replay attacks.
+    - Centralized Control: Authentication is managed by a central KDC.
+- Common Uses of Kerberos:
+    - Windows Active Directory authentication.
+    - Single Sign-On (SSO): Users authenticate once and gain access to multiple services.
+    - Secure access to enterprise services such as file servers, databases, and applications.
+- Limitations:
+    - Relies on the availability of the KDC; if the KDC is down, authentication fails.
+    - Requires synchronized clocks across the network for ticket validation.
+- Full Forms:
+    - KDC: Key Distribution Center
+    - AS: Authentication Server
+    - TGS: Ticket Granting Server
+    - TGT: Ticket Granting Ticket
+    - SSO: Single Sign-On
